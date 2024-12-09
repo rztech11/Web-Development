@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 125vh;
+    /* border: 2px solid red; */
+    background-image: url(./images/headbanerFlaris-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+    background-size: cover;
+
+}
+
+.head {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid black;
+    background-color: black;
+
+}
+
+.logo-div {
+    width: 20%;
+    height: 10vh;
+    /* border: 1px solid rebeccapurple; */
+    margin-top: 35px;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.logo {
+    width: 80%;
+    height: 60%;
+}
+
+.nav {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    height: 10vh;
+    /* border:  1px solid white; */
+    margin-top: 40px;
+    /* background-color: rebeccapurple; */
+
+}
+
+.li {
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    margin-left: 20px;
+    font-size: 14.5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.li:hover {
+    border-bottom: 3px solid #00AAFF;
+    border-radius: 2px;
+
+}
+
+
+.div-social {
+    width: 13%;
+    height: 10vh;
+    /* border: 1px solid white; */
+    /* background-color: red; */
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    margin-left: 18px;
+
+}
+
+.social {
+    width: 70%;
+    height: 10vh;
+    /* border: 1px solid red; */
+    display: inline-block;
+    vertical-align: top;
+    /* margin-left: 20px; */
+}
+
+#fb {
+    color: white;
+}
+
+#yt {
+    color: white;
+    margin-left: 5px;
+}
+
+#insta {
+    color: white;
+    margin-left: 5px;
+    /* margin-top: 5px; */
+}
+
+.iconflag {
+    width: 15%;
+    height: 30%;
+
+    display: inline-block;
+    vertical-align: top;
+
+    /* border: 1px solid red; */
+
+
+
+}
+
+.flar {
+    width: max-content;
+    height: 10vh;
+    /* border:  1px solid red; */
+    margin: auto;
+    margin-top: 20px;
+
+
+
+}
+
+#angle {
+    color: hsl(200, 100%, 50%);
+    font-size: 12px;
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.text1 {
+    color: #00AAFF;
+
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 35px;
+
+}
+
+
+.text2 {
+    color: white;
+
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 80%;
+    height: 10vh;
+    /* border:  1px solid red; */
+    margin: auto;
+    text-align: center;
+    margin-top: -5px;
+
+
+
+}
+
+.sec-1 {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    background-color: #ECF1F7;
+    padding: 1px;
+}
+
+.div-text {
+    width: 100%;
+    height: 10vh;
+    /* border:  2px solid red; */
+    text-align: center;
+    margin-top: 40px;
+
+
+
+}
+
+
+.text3 {
+    color: black;
+
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+
+}
+
+.desc1 {
+    width: max-content;
+    height: 25vh;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 50px;
+}
+
+.para1 {
+    color: #666666;
+    text-align: center;
+    font-size: 18px;
+}
+
+.para2 {
+    color: #666666;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.div-img {
+    width: max-content;
+    margin: auto;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.img1 {
+    width: 120%;
+    height: 120%;
+    border-radius: 10px;
+}
+
+.sec-2 {
+    width: 100%;
+    height: 175vh;
+    /* border: 1px solid black; */
+}
+
+.table {
+
+    width: 75%;
+    height: 12vh;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 80px;
+    padding: 1px;
+
+
+}
+
+.div1 {
+    width: 100%;
+    height: 15vh;
+    /* border: 1px solid black; */
+    background-color: #EDEDED;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.div2 {
+    width: 100%;
+    height: 15vh;
+    border: 1px solid #CCCCCC;
+    background-color: #DDEBF7;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+
+.box {
+    width: 33%;
+    height: 15vh;
+    /* border: 1px solid black; */
+    display: inline-block;
+    vertical-align: top;
+
+
+}
+
+.text4 {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    color: #515254;
+    font-size: 18px;
+}
+
+.img2 {
+    /* border: 1px solid brown; */
+    display: block;
+    margin-left: 160px;
+    margin-top: -8px;
+
+    /* text-align: center; */
+
+
+}
+
+.div3 {
+    width: 100%;
+    height: 15vh;
+    border: 1px solid #CCCCCC;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+
+}
+
+.text5 {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    color: #515254;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sec-3 {
+    width: 100%;
+    height: 125vh;
+    background-image: url(./images/Flaris_LAR-1_1600px-53.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -140px;
+    padding: 1px;
+    background-color:black;
+}
+
+.text6 {
+    color: white;
+
+    font-weight: 200;
+    letter-spacing: 1px;
+    /* margin-top: 10; */
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+
+}
+
+.para3 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+/* .div-main
+{
+    width: 100%;
+    height: 40vh;
+    border: 1px solid  red;
+    margin-top: 200px;
+    display: inline-block;
+
+} */
+.div-text1
+{
+    width: 20%;
+    height: 10vh;
+    /* border: 1px solid  red; */
+
+    display: inline-block;
+    vertical-align: top;  
+    margin-left: 350px;
+    margin-top: 200px;
+   
+}
+.div-text2
+{
+    width: 20%;
+    height: 10vh;
+    /* border: 1px solid  red; */
+
+    margin-left: 100px;
+    margin-top: 200px;
+   
+     display: inline-block;
+    vertical-align: top;  
+}
+.text7
+{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.div-btn
+{
+    width: 19%;
+    height: 9vh;
+    border: 1px solid #00AAFF;
+    margin-left: 350px;
+    margin-top: 20px; 
+    display: inline-block;
+    vertical-align: top;
+    background-color: black;
+    color: #00AAFF;
+    font-weight: 500;
+font-size: 15px;
+
+    transition: 0.34s;
+    
+}
+
+.div-btn1
+{
+    width: 19%;
+    height: 9vh;
+    border: 1px solid #00AAFF;
+    margin-left: 100px;
+    margin-top: 20px; 
+    display: inline-block;
+    background-color: black;
+
+    vertical-align: top;
+    color: #00AAFF;
+    font-weight: 500;
+font-size: 15px;
+    transition: 0.34s;
+   
+}
+.text8
+{
+   text-align: center;
+   margin-top: 10px;
+
+}
+.text8:hover
+{
+    color: white;
+    background-color: #00AAFF;
+    cursor: pointer;
+}
+
+#angle1
+{
+    color: white;
+    font-size: 10px;
+    margin-left: 1px;
+}
+.div-btn:hover {
+    
+    color: white;
+    background-color: #00AAFF;
+    cursor: pointer;
+}
+.div-btn1:hover {
+    
+    color: white;
+    background-color: #00AAFF;
+    cursor: pointer;
+}
+
+.sec-4
+{
+    width: 100%;
+    height: 50vh;
+    background-color: #1E1E1E;
+    padding: 1px;
+}
+#angle2 {
+    color: white;
+    font-size: 12px;
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+.readmore
+{
+    width: 15%;
+    height: 9vh;
+    border: 1px solid white;
+    margin-left: 550px;
+    margin-top: 20px; 
+    background-color: #1E1E1E;
+    color: white;
+    font-weight: 500;
+font-size: 15px;
+    transition: 0.34s;
+   
+}
+.readmore:hover {
+    
+    color: #00AAFF;
+    background-color: white;
+    cursor: pointer;
+}
+
+#angle3
+{
+    color: #00AAFF;
+    font-size: 10px;
+    margin-left: 1px;
+}
+
+.sec-5
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #00132B;
+    padding: 1px;
+}
+.div-box
+{
+    width: 40%;
+    height: 50vh;
+    /* border:  1px solid red;  */
+    margin-left:100px;
+    margin-top: 80px;
+    display: inline-block;
+    vertical-align: top;
+}
+.legal
+{
+    width: 30%;
+    height: 40vh;
+    /* border:  1px solid yellow; */
+    display: inline-block;
+    vertical-align: top;
+    /* margin-left: 10px; */
+}
+.text8{
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    font-size: 15px;
+
+}
+.li1
+{
+    color: #CCCCCC;
+    list-style: none;
+    margin-top: 20px;
+    font-size: 13px;
+ 
+
+}
+.div-box1
+{
+    width: 30%;
+    height: 50vh;
+    /* border: 1px solid peru; */
+    display: inline-block; 
+    vertical-align: top;
+    margin-top: 80px;
+    margin-left: 100px;
+
+}
+.text9
+{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.input
+{
+    width: 380px;
+    height: 55px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.Signup
+{
+    width: 380px;
+    height: 55px;
+    margin-top: 20px;
+    background-color:#00132B;
+    border-radius: 10px;
+    border: 3px solid white;
+    outline: none;
+    padding-left: 10px;
+}
+
+.Signup:hover
+{
+background-color: #515254;
+
+}
+
+.text10
+{
+color: white;
+font-size: 20px;
+text-align: center;
+margin-top: 10px;
+font-weight: 600;
+}
+.text11
+{
+    color: white;
+    margin-top: 30px;
+
+    font-size: 15px;
+}
+
+.div-box2
+{
+
+    width: 11%;
+    height: 10vh;
+    /* border:  1px solid white; */
+    margin-left: 100px;
+}
+
+.line
+{
+    width: 85%;
+    height: 0.1vh;
+    background-color: #00AAFF;
+    margin: auto;
+}
+.rights
+{
+    width: max-content;
+    height: 10vh;
+    margin-left: 100px;
+}
