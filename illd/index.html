@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* universal selector "*" */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        #header {
+            width: 100%;
+            height: 160vh;
+            /* border: 2px solid red; */
+
+            background-image: url(./images/front-page-header.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
+        #nav {
+            width: 100%;
+            height: 15%;
+            padding: 1px;
+            /* border: 4px solid black; */
+        }
+
+        #logo {
+            margin-left: 50px;
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #menu {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 300px;
+            margin-top: 60px;
+
+
+
+        }
+
+        #li {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            /* font-weight: bold; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #li:hover {
+            color: rgb(255, 255, 0);
+
+        }
+
+        #container {
+            width: 100%;
+            height: 80%;
+            /* border: 2px solid rebeccapurple; */
+            padding: 1px;
+
+        }
+
+        #text {
+            color: white;
+            text-align: center;
+            margin-top: 200px;
+            font-size: 45px;
+
+        }
+
+        #disc {
+            color: white;
+            text-align: center;
+            font-size: 17px;
+            margin-top: 25px;
+
+        }
+
+        #span-dot {
+            color: yellow;
+
+        }
+
+        #button {
+            margin-top: 45px;
+        }
+
+        #btn {
+
+            width: 250px;
+            height: 60px;
+            border: 2px solid white;
+            background-color: rgba(0, 0, 0, 0.243);
+            border-radius: 3px;
+            color: white;
+            font-size: 20px;
+
+            /* margin-right: 200px; */
+
+        }
+
+        #btn:hover {
+            background-color: rgba(0, 0, 0, 0.07);
+            transition: 0.20s;
+            cursor: pointer;
+        }
+
+        #btn2 {
+            width: 250px;
+            height: 60px;
+            background-color: rgb(255, 222, 0);
+            border-radius: 3px;
+            margin-left: 20px;
+            color: white;
+            border: none;
+            font-size: 20px;
+        }
+
+        #btn2:hover {
+            background-color: blueviolet;
+            transition: 0.20s;
+            cursor: pointer;
+        }
+
+        #About {
+            width: 100%;
+            height: 70vh;
+            background-color: white;
+            padding: 1px;
+
+        }
+
+        #disc1 {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.48);
+            margin-top: 50px;
+        }
+
+
+        #disc2 {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.48);
+            margin-top: 5px;
+        }
+
+        #sub1 {
+            width: 100%;
+            height: 35vh;
+            /* border: 2px solid black; */
+        }
+
+        #box {
+            width: 33%;
+            height: 100%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #clip1 {
+            width: 60px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #F18B6D;
+            margin-left: 180px;
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 600;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-top: 5px;
+
+        }
+
+        #clip2 {
+            width: 60px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #F1D204;
+            margin-left: 280px;
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 600;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        #clip3 {
+            width: 60px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #6A4D8A;
+            margin-left: 328px;
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 600;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        #poly1 {
+            clip-path: polygon(50% 73%, 0 0, 100% 0);
+            width: 10px;
+            height: 10px;
+            background-color: #F18B6D;
+            margin-left: 210px;
+        }
+
+        #poly2 {
+            clip-path: polygon(50% 73%, 0 0, 100% 0);
+            width: 10px;
+            height: 10px;
+            background-color: #F1D204;
+            margin-left: 310px;
+        }
+
+        #poly3 {
+            clip-path: polygon(50% 73%, 0 0, 100% 0);
+            width: 10px;
+            height: 10px;
+            background-color: #6A4D8A;
+            margin-left: 355px;
+        }
+
+        #line-grey {
+            width: 90%;
+            height: 4px;
+            background-color: #EBEBEB;
+            margin-left: 40px;
+
+        }
+
+        #line-red {
+            width: 60%;
+            height: 6px;
+            background-color: #F18B6D;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        #a-icon {
+            color: tomato;
+            margin-left: 40px;
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #Typo {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 16px;
+            color: tomato;
+            margin-left: 4px;
+        }
+
+        #pencil-icon {
+            color: #F1D204;
+            margin-left: 40px;
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #design {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 16px;
+            color: #F1D204;
+            margin-left: 4px;
+        }
+
+        #line-yellow {
+            width: 82%;
+            height: 6px;
+            background-color: #F1D204;
+            display: inline-block;
+            vertical-align: top;
+
+
+        }
+
+        #line-purple {
+            width: 86%;
+            height: 6px;
+            background-color: #6A4D8A;
+            display: inline-block;
+            vertical-align: top;
+
+
+        }
+
+        #code {
+            color: #6A4D8A;
+            margin-left: 40px;
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #development {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 16px;
+            color: #6A4D8A;
+            margin-left: 4px;
+        }
+
+        #circle1 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #F18B6D;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: -2px;
+            margin-left: -6px;
+        }
+
+        #circle2 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #F1D204;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: -2px;
+            margin-left: -6px;
+        }
+
+        #circle3 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #6A4D8A;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: -2px;
+            margin-left: -12px;
+        }
+
+        #project {
+            width: 100%;
+            height: 80vh;
+        }
+
+        #text1 {
+            text-align: center;
+            color: rgb(84, 84, 84);
+            font-size: 40px;
+            margin-top: 30px;
+
+        }
+
+        #pro-div {
+            width: 100%;
+            height: 68%;
+            margin-top: 28px;
+
+
+        }
+
+        #img1 {
+
+            width: 24.9%;
+            height: 100%;
+
+        }
+
+
+
+        #img2 {
+
+            width: 24.9%;
+            height: 100%;
+            margin-left: -4px;
+
+        }
+
+        #img3 {
+            vertical-align: top;
+            width: 24.9%;
+            height: 100%;
+            margin-left: -4px;
+
+        }
+
+        #img4 {
+            vertical-align: top;
+            width: 24.9%;
+            height: 100%;
+            margin-left: -4px;
+
+        }
+
+        #Testi {
+            width: 100%;
+            height: 120vh;
+            background-image: url(./images/purple.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+            margin: auto;
+
+
+
+        }
+
+        #Testimonials {
+            color: #fff;
+            font-size: 35px;
+            font-weight: 750;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #img-test1 {
+            border-radius: 50%;
+            margin-left: 570px;
+            margin-top: 40px;
+        }
+
+        #box1 {
+            width: 80%;
+            height: 25vh;
+            background-color: #6A4D8A;
+            margin: auto;
+            margin-top: 25px;
+            padding: 1px;
+
+        }
+
+        #disc3 {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.48);
+            color: white;
+            margin-top: 5px;
+            margin-top: 30px;
+        }
+
+        #testi-poly {
+            clip-path: polygon(50% 73%, 0 0, 100% 0);
+            width: 35px;
+            height: 35px;
+            background-color: #6A4D8A;
+            margin: auto;
+
+        }
+
+        #Services {
+            width: 100%;
+            height: 70vh;
+        }
+
+        #text2 {
+            text-align: center;
+            font-size: 40px;
+            color: #545454;
+            margin-top: 40px;
+
+        }
+
+        #serv-box {
+            width: 100%;
+            height: 45vh;
+            margin-top: 45px;
+
+        }
+
+        #pencil-iconL {
+            color: #F18B6D;
+            margin-left: 200px;
+            margin-top: 20px;
+            font-size: 30px;
+
+        }
+
+        #designL {
+
+            margin-top: 8px;
+            color: #F18B6D;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        #codeL {
+            color: #F1D204;
+            margin-left: 200px;
+            margin-top: 20px;
+            font-size: 30px;
+
+        }
+
+        #WebL {
+
+            margin-top: 8px;
+            color: #F1D204;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        #search {
+            color: #6A4D8A;
+            margin-left: 200px;
+            margin-top: 20px;
+            font-size: 30px;
+
+        }
+
+        #seo {
+
+            margin-top: 8px;
+            color: #6A4D8A;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        #Latest-News {
+            width: 100%;
+            height: 180vh;
+            background-color: #222F36;
+            padding: 1px;
+        }
+
+        #text3 {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        #disc4 {
+            text-align: center;
+            color: gray;
+            margin-top: 7px;
+
+        }
+
+        #blog {
+            width: 10%;
+            height: 10vh;
+            margin-left: 500px;
+            margin-top: 60px;
+
+        }
+
+        #blog-btn {
+            width: 170px;
+            height: 45px;
+            background-color: rgb(255, 222, 0);
+            border-radius: 3px;
+            margin-left: 20px;
+            /* color: white; */
+            border: none;
+            font-size: 20px;
+        }
+
+        #blog-btn:hover {
+            background-color: blueviolet;
+            transition: 0.20s;
+            cursor: pointer;
+        }
+
+        #text4 {
+            font-size: 15px;
+            text-align: center;
+            color: white;
+            display: inline-block;
+
+        }
+
+        #angle {
+            font-size: 10px;
+            color: #F1D204;
+
+            display: block;
+            margin: auto;
+            margin-top: 3px;
+
+
+            /* border: 2px solid red; */
+
+        }
+
+        #circle4 {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 10px;
+            padding-top: 1px;
+            margin-top: 4px;
+            display: inline-block;
+
+
+        }
+
+        #box-news {
+            width: 95%;
+            height: 120vh;
+            margin: auto;
+            margin-top: 50px;
+            padding: 1px;
+        }
+
+        #news1 {
+            width: 30%;
+            height: 90%;
+            display: inline-block;
+            background-color: white;
+            vertical-align: top;
+        }
+
+        #news2 {
+            width: 30%;
+            height: 95%;
+            background-color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 57px;
+
+        }
+
+        #news3 {
+            width: 30%;
+            height: 90%;
+            background-color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+        }
+
+
+        #text5 {
+            text-align: left;
+            font-size: 25px;
+            font-weight: 750;
+            color: #5E5E5E;
+            margin: 30px;
+        }
+
+        #text5:hover {
+            color: #F1D204;
+        }
+
+        #disc5 {
+
+            color: gray;
+            margin-top: 10px;
+            margin-left: 25px;
+        }
+
+        #angle1 {
+            font-size: 10px;
+            color: white;
+
+            display: block;
+            margin: auto;
+            margin-top: 2px;
+            margin-left: 4px;
+
+
+            /* border: 2px solid red; */
+
+        }
+
+        #hover {
+            width: 120px;
+            height: 30px;
+            /* background-color: red; */
+            margin-top: 100px;
+            margin-left: 30px;
+        }
+
+        #circle5 {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #F1D204;
+
+            padding-top: 1px;
+            margin-top: 4px;
+            display: inline-block;
+            vertical-align: top;
+
+
+        }
+
+        #hover:hover #text6 {
+            color: #6A4D8A;
+            cursor: pointer;
+        }
+
+        #hover:hover #circle5 {
+            background-color: #6A4D8A;
+            cursor: pointer;
+        }
+
+        #text6 {
+            font-size: 15px;
+            text-align: center;
+            color: #F1D204;
+            display: inline-block;
+            vertical-align: top;
+            /* margin-top: 95px; */
+
+
+        }
+
+        #sec-yellow {
+            width: 100%;
+            height: 25vh;
+            background-image: url(./images/front-page-counter.jpg);
+            background-position: center;
+            padding: 1px;
+        }
+
+        #in-sec {
+            width: 100%;
+            height: 25vh;
+            /* border: 1px solid red; */
+        }
+
+        #line {
+            width: 0.1%;
+            height: 7vh;
+            background-color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 150px;
+            margin-top: 45px;
+
+        }
+
+        #text7 {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 150px;
+            margin-top: 50px;
+            font-size: 25px;
+            font-weight: 700;
+            color: white;
+
+        }
+
+        #team {
+            width: 100%;
+            height: 80vh;
+            background-color: white;
+        }
+
+        #main-box {
+
+            width: 100%;
+            height: 50vh;
+            /* border: 2px solid black; */
+            margin-top: 60px;
+
+        }
+
+        #profile-1 {
+            width: 30%;
+            /* height: 40; */
+            border-radius: 50%;
+            margin-left: 40px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        #info {
+            width: 50%;
+            height: 40vh;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+        }
+
+        #name1 {
+            /* display: inline-block;
+            vertical-align: top; */
+            color: #5E5E5E;
+
+        }
+
+        #Web1 {
+            color: #F18B6D;
+            margin-top: 10px;
+            /* display: inline-block;
+            vertical-align: top; */
+        }
+
+        #seo1 {
+            color: #F1D204;
+            margin-top: 10px;
+            /* display: inline-block;
+            vertical-align: top; */
+        }
+
+        #dev {
+            color: #6A4D8A;
+            margin-top: 10px;
+            /* display: inline-block;
+            vertical-align: top; */
+        }
+
+        #disc6 {
+            color: #0000006d;
+            margin-top: 30px;
+
+        }
+
+        #b1icon1 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #F18B6D;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+
+        #b1icon2 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #F18B6D;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+
+        }
+
+        #b1icon3 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #F18B6D;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+
+        }
+
+        #b2icon1 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #F1D204;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #b2icon2 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #F1D204;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #b2icon3 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #F1D204;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #b3icon1 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #6A4D8A;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #b3icon2 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #6A4D8A;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #b3icon3 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #6A4D8A;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #fb1 {
+            color: #F18B6D;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-top: 7px;
+        }
+
+        #twitter1 {
+            color: #F18B6D;
+            margin-top: 10px;
+            margin-left: 6px;
+            margin-top: 7px;
+        }
+
+        #linkedin1 {
+            color: #F18B6D;
+            margin-top: 10px;
+            margin-left: 6px;
+            margin-top: 7px;
+        }
+
+
+        #fb2 {
+            color: #F1D204;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-top: 7px;
+        }
+
+        #twitter2 {
+            color: #F1D204;
+            margin-top: 10px;
+            margin-left: 6px;
+            margin-top: 7px;
+        }
+
+        #linkedin2 {
+            color: #F1D204;
+            margin-top: 10px;
+            margin-left: 6px;
+            margin-top: 7px;
+        }
+
+
+
+        #fb3 {
+            color: #6A4D8A;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-top: 7px;
+        }
+
+        #twitter3 {
+            color: #6A4D8A;
+            margin-top: 10px;
+            margin-left: 6px;
+            margin-top: 7px;
+        }
+
+        #linkedin3 {
+            color: #6A4D8A;
+            margin-top: 10px;
+            margin-left: 6px;
+            margin-top: 7px;
+        }
+
+        #Contact {
+            width: 100%;
+            height: 120vh;
+            background-color: white;
+        }
+
+        #contact-box {
+            width: 100%;
+            height: 25vh;
+            /* border: 1px solid black; */
+            margin-top: 40px;
+        }
+
+        #div1 {
+            width: 25%;
+            height: 20vh;
+            /* border: 1px solid black; */
+            margin-left: 30px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #div2 {
+            width: 35%;
+            height: 20vh;
+            /* border: 1px solid black; */
+            margin-left: 30px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 100px;
+        }
+
+        #div3 {
+            width: 10%;
+            height: 10vh;
+            /* border: 1px solid black; */
+            margin-left: 30px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 200px;
+        }
+
+        #addr {
+            color: #F1D204;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+
+        }
+
+        #line1 {
+            width: 0.1%;
+            height: 7vh;
+            background-color: #5454543f;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+
+
+
+        }
+
+        #disc7 {
+            display: inline-block;
+            vertical-align: top;
+            color: #5454549c;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        #info1 {
+            width: 80%;
+            height: 10vh;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10px;
+        }
+
+        #info2 {
+            width: 60%;
+            height: 10vh;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10px;
+        }
+
+        #sec-form {
+            width: 28%;
+            height: 10vh;
+            /* border: 1px solid black; */
+            margin-left: 35px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #input {
+            width: 100%;
+            height: 5vh;
+            font-weight: 300;
+        }
+
+        #name2 {
+            color: #545454b4;
+        }
+
+        #Message {
+            width: 90%;
+            height: 60vh;
+            margin-left: 35px;
+            margin-top: -70px;
+            /* border:  1px solid black; */
+        }
+
+        #input1 {
+            width: 100%;
+            height: 40vh;
+        }
+
+        #send {
+            background-color: #F1D204;
+            color: white;
+            width: 130px;
+            height: 40px;
+            margin-left: 1010px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 3px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        #footer {
+            width: 100%;
+            height: 80vh;
+            background-color: #292825;
+            margin-top: 40px;
+
+        }
+
+        #footer-div {
+            width: 100%;
+            height: 65vh;
+            /* border: 1px solid red; */
+
+        }
+
+        #box-footer {
+            width: 23%;
+            height: 100%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #text-footer {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            font-size: 25px;
+            font-weight: 600;
+            
+        }
+
+        #hover1 {
+            width: 150px;
+            height: 30px;
+            /* background-color: red; */
+            margin-top: 40px;
+            margin-left: 80px;
+        }
+        #hover2 {
+            width: 170px;
+            height: 30px;
+            /* background-color: red; */
+            margin-top: 15px;
+            margin-left: 80px;
+        }
+
+        #hover2:hover #text8 {
+            color: #6A4D8A;
+            cursor: pointer;
+        }
+        #hover2:hover #angle2 {
+            color: #6A4D8A;
+            cursor: pointer;
+        }
+       
+
+        #hover1:hover #text8 {
+            color: #6A4D8A;
+            cursor: pointer;
+        }
+        #hover1:hover #angle2 {
+            color: #6A4D8A;
+            cursor: pointer;
+        }
+       
+        #text8 {
+            font-size: 17   px;
+            text-align: center;
+            color: #8C979E;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+
+
+        }
+        #angle2 {
+            font-size: 13px;
+            color: #8C979E;
+
+           display: inline-block;
+           vertical-align: top;
+            margin-top: 5px;
+        
+
+
+            /* border: 2px solid red; */
+
+        }
+        #copy-rights
+        {
+            width: 100%;
+            height: 15vh;
+            background-color: #242320;
+            padding: 1px;
+        }
+
+        #copy-rights-div
+        {
+            width: 40%;
+            height: 10vh;
+            /* border: 1px solid orange; */
+            /* margin: auto; */
+            margin-top: 30px;
+            margin-left: 450px;
+            
+        }
+        #text9
+        {
+            color: #8C9597;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        #text10
+        {
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- semantic tags  -->
+    <header id="header">
+        <nav id="nav">
+            <div id="logo"><img src="./images/cropped-footer-logo-1.png" alt="Logo"></div>
+            <div id="menu">
+                <ul>
+                    <li id="li">About</li>
+                    <li id="li">Portfolio</li>
+                    <li id="li">Testimonials</li>
+                    <li id="li">Service</li>
+                    <li id="li">Blog</li>
+                    <li id="li">Our Team</li>
+                    <li id="li">Contact Us</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="container">
+            <div id="text">
+                <h1>Clean<span id="span-dot">.</span>Slick<span id="span-dot">.</span>Pixel Perfect</h1>
+
+                <div id="disc">
+                    <p>lldy is a great one-page theme, perfect for developers and designers but also for someone who
+                        just wants a <br> new website for his business. Try it now!</p>
+                </div>
+
+                <div id="button">
+                    <button id="btn">Learn More</button>
+                    <button id="btn2">Downloads</button>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <section id="About">
+        <h1 id="text1"> About</h1>
+        <p id="disc1">It is an amazng one-page theme with great features that offers an incredible experience. It is
+            easy to install, make changes, adapt for your <br> business. A modern design with clean lines and styling
+            for a wide variety of content, exactly how a business design should be. You can add <br> as many images as
+            you want to the main header area and turn them into slider.</p>
+
+        <div id="sub1">
+            <div id="box">
+                <div id="clip1">
+                    60%
+                </div>
+                <div id="poly1"></div>
+
+                <div id="line-grey">
+                    <div id="line-red"></div>
+                    <div id="circle1"></div>
+                </div>
+
+                <i class="fa-solid fa-a" id="a-icon"></i>
+                <p id="Typo">Typography</p>
+
+            </div>
+            <div id="box">
+                <div id="clip2">
+                    82%
+                </div>
+                <div id="poly2"></div>
+
+                <div id="line-grey">
+                    <div id="line-yellow"></div>
+                    <div id="circle2"></div>
+                </div>
+                <i class="fa-solid fa-pencil" id="pencil-icon"></i>
+                <p id="design">Design</p>
+            </div>
+            <div id="box">
+                <div id="clip3">
+                    86%
+                </div>
+                <div id="poly3"></div>
+
+                <div id="line-grey">
+                    <div id="line-purple"></div>
+                    <div id="circle3"></div>
+                </div>
+                <i class="fa-solid fa-code" id="code"></i>
+                <p id="development">development</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="project">
+        <h1 id="text1"> Projects</h1>
+        <p id="disc2">You'll love our work. Check it out!</p>
+        <div id="pro-div">
+            <img id="img1" src="./images/front-page-project-1.jpg" alt="">
+            <img id="img2" src="./images/front-page-project-2.jpg" alt="">
+            <img id="img3" src="./images/front-page-project-3.jpg" alt="">
+            <img id="img4" src="./images/front-page-project-4.jpg" alt="">
+        </div>
+
+    </section>
+
+
+    <section id="Testi">
+        <h1 id="Testimonials">Testimonials</h1>
+        <img id="img-test1" src="./images/mike-muller-127x127.jpg" alt="">
+
+        <div id="box1">
+            <p id="disc3">"Awesome theme with great design and awesome support. If you don’t know how to code your own
+                WordPress theme, but you still <br> want a good-looking website for your business, Illdy might be
+                exactly what you need. It is a slick theme with a lot of of features to <br> choose from"</p>
+        </div>
+        <div id="testi-poly"></div>
+        <h1 id="Testimonials">Mike Muller</h1>
+
+    </section>
+
+    <section id="Services">
+        <h1 id="text2">Services</h1>
+        <p id="disc2">In order to help you grow your business, our carefully selected experts can advise you in in the
+            following areas:</p>
+        <div id="serv-box">
+            <div id="box">
+                <i class="fa-solid fa-pencil" id="pencil-iconL"></i>
+                <p id="designL"> Web Design</p>
+                <p id="disc2">Consectetur adipiscing elit. Praesent molestie urna <br>hendrerit erat tincidunt tempus.
+                    Aliquam a leo risus. <br> Fusce a metus non augue dapibus porttitor at in <br> mauris. Pellentesque
+                    commodo...</p>
+            </div>
+            <div id="box">
+                <i class="fa-solid fa-code" id="codeL"></i>
+                <p id="WebL">Web Development</p>
+                <p id="disc2">Consectetur adipiscing elit. Praesent molestie urna <br>hendrerit erat tincidunt tempus.
+                    Aliquam a leo risus. <br> Fusce a metus non augue dapibus porttitor at in <br> mauris. Pellentesque
+                    commodo...</p>
+            </div>
+            <div id="box">
+                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                <p id="seo">SEO Analisys </p>
+                <p id="disc2">Consectetur adipiscing elit. Praesent molestie urna <br>hendrerit erat tincidunt tempus.
+                    Aliquam a leo risus. <br> Fusce a metus non augue dapibus porttitor at in <br> mauris. Pellentesque
+                    commodo...</p>
+            </div>
+        </div>
+    </section>
+    <section id="Latest-News">
+
+        <h1 id="text3">Latest News</h1>
+        <p id="disc4">If you are interested in the latest articles in the industry, take a sneak peek at our blog. You
+            have nothing to loose!</p>
+
+        <div id="blog">
+
+            <button id="blog-btn">
+
+                <div id="circle4">
+                    <i class="fa-solid fa-angle-right" id="angle"></i>
+                </div>
+
+                <p id="text4">See Blog</p>
+            </button>
+
+        </div>
+
+        <div id="box-news">
+            <div id="news1">
+                <img src="./images/photo-1447687643809-e05fd462f350-360x213.jpg" alt="">
+
+                <h1 id="text5"> We Have Made Illdy <br> Theme SEO
+                    Friendly</h1>
+
+                <p id="disc5">Illdy One Page WordPress theme is fully <br> SEO friendly and is ready to help you to
+                    <br>achieve the highest rankings…
+                </p>
+
+                <div id="hover">
+
+                    <div id="circle5">
+                        <i class="fa-solid fa-angle-right" id="angle1"></i>
+
+                    </div>
+                    <p id="text6">Read More</p>
+                </div>
+
+
+            </div>
+            <div id="news2">
+                <img src="./images/photo-1449168013943-3a15804bb41c-360x213.jpg" alt="">
+                <h1 id="text5"> Stunning One Page WordPress Theme For Masses
+                </h1>
+
+                <p id="disc5">This theme is not just free, it is free for <br> private and commercial use since it is
+                    <br> licensed under GPL…
+                </p>
+
+                <div id="hover">
+
+                    <div id="circle5">
+                        <i class="fa-solid fa-angle-right" id="angle1"></i>
+
+                    </div>
+                    <p id="text6">Read More</p>
+                </div>
+            </div>
+            <div id="news3">
+                <img src="./images/photo-1450101215322-bf5cd27642fc-360x213.jpg" alt="">
+                <h1 id="text5"> Hello world!
+                </h1>
+
+                <p id="disc5">Welcome to colorlib.com. This is our first <br> post around Illdy WordPress theme. Now
+                    <br> show that you can make out of it.…
+                </p>
+
+
+                <div id="hover">
+
+                    <div id="circle5">
+                        <i class="fa-solid fa-angle-right" id="angle1"></i>
+
+                    </div>
+                    <p id="text6">Read More</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="sec-yellow">
+        <div id="in-sec">
+
+            <h1 id="text7">PROJECTS</h1>
+            <div id="line"></div>
+            <h1 id="text7">CLIENTS</h1>
+            <div id="line"></div>
+            <h1 id="text7">COFFES</h1>
+
+
+        </div>
+    </section>
+
+    <section id="team">
+        <h1 id="text2">Teams</h1>
+        <p id="disc2">Meet the people that are going to take your business to the next level.</p>
+
+        <div id="main-box">
+            <div id="box">
+                <img id="profile-1" src="./images/front-page-team-1.jpg" alt="">
+                <div id="info">
+                    <h1 id="name1"> Mark Lawrance</h1>
+                    <p id="Web1">Web Designer</p>
+                    <p id="disc6">Creative, detail-oriented, always focused.</p>
+                    <div id="b1icon1">
+                        <i class="fa-brands fa-facebook-f" id="fb1"></i>
+
+                    </div>
+                    <div id="b1icon2">
+                        <i class="fa-brands fa-x-twitter" id="twitter1"></i>
+
+                    </div>
+                    <div id="b1icon3">
+                        <i class="fa-brands fa-linkedin-in" id="linkedin1"></i>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="box">
+                <img id="profile-1" src="./images/front-page-team-2.jpg" alt="">
+                <div id="info">
+                    <h1 id="name1">Jane Stenton</h1>
+                    <p id="seo1">SEO Specialist</p>
+                    <p id="disc6">Curious, tech-geeck and gets serious when it comes to work.</p>
+                    <div id="b2icon1">
+                        <i class="fa-brands fa-facebook-f" id="fb2"></i>
+
+                    </div>
+                    <div id="b2icon2">
+                        <i class="fa-brands fa-x-twitter" id="twitter2"></i>
+
+                    </div>
+                    <div id="b2icon3">
+                        <i class="fa-brands fa-linkedin-in" id="linkedin2"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="box">
+                <img id="profile-1" src="./images/front-page-team-3.jpg" alt="">
+                <div id="info">
+                    <h1 id="name1"> John Smith</h1>
+                    <p id="dev">Developer</p>
+                    <p id="disc6">Creative, detail-oriented, always focused.</p>
+                    <div id="b3icon1">
+                        <i class="fa-brands fa-facebook-f" id="fb3"></i>
+
+                    </div>
+                    <div id="b3icon2">
+                        <i class="fa-brands fa-x-twitter" id="twitter3"></i>
+
+                    </div>
+                    <div id="b3icon3">
+                        <i class="fa-brands fa-linkedin-in" id="linkedin3"></i>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <h1 id="text2">Contact US</h1>
+
+        <div id="contact-box">
+            <div id="div1">
+                <p id="addr">Address </p>
+                <div id="info1">
+                    <div id="line1"></div>
+                    <p id="disc7">Street 221B Baker Street, <br>London, UK</p>
+
+                </div>
+
+
+
+
+            </div>
+            <div id="div2">
+                <p id="addr">Customer Support </p>
+                <div id="info2">
+                    <div id="line1"></div>
+                    <p id="disc7">E-mail: contact@site.com <br> Phone: (555) 555-5555</p>
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <div id="div3">
+                <i class="fa-brands fa-x-twitter" id="twitter3"></i>
+
+                <i class="fa-brands fa-facebook-f" id="fb3"></i>
+
+                <i class="fa-brands fa-linkedin-in" id="linkedin3"></i>
+
+
+            </div>
+
+
+        </div>
+        <form>
+
+            <div id="contact-box">
+                <div id="sec-form">
+                    <p id="name2"> Your Name (required) </p>
+                    <input id="input">
+
+                </div>
+                <div id="sec-form">
+                    <p id="name2"> Your Email (required)</p>
+                    <input id="input">
+                </div>
+                <div id="sec-form">
+
+                    <p id="name2">
+                        Subject</p>
+                    <input id="input">
+                </div>
+            </div>
+
+            <div id="Message">
+                <p id="name2"> Your Message </p>
+                <input type="text" name="" id="input1">
+
+                <button id="send">Send</button>
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <footer id="footer">
+
+        <div id="footer-div">
+
+            <div id="box-footer">
+                <h1 id="text-footer">PRODUCTS</h1>
+                <div id="hover1">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">Our work</p>
+                    
+                </div>
+
+                <div id="hover2">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">Club</p>
+                    
+                </div>
+                <div id="hover2">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">News</p>
+                    
+                </div>
+             
+
+                <div id="hover2">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">Announcements</p>
+                    
+                </div>
+
+
+
+                
+            </div>
+            <div id="box-footer">
+                <h1 id="text-footer">INFORMATION</h1>
+
+                <div id="hover1">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">Pricing</p>
+                    
+                </div>
+
+                <div id="hover2">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">Terms</p>
+                    
+                </div>
+                <div id="hover2">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">Affilliates</p>
+                    
+                </div>
+             
+
+                <div id="hover2">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">Blog</p>
+                    
+                </div>
+
+            </div>
+            <div id="box-footer">
+
+                <h1 id="text-footer">SUPPORT</h1>
+
+
+                <div id="hover1">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">Documentation</p>
+                    
+                </div>
+
+                <div id="hover2">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">FAQs</p>
+                    
+                </div>
+                <div id="hover2">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">Forums</p>
+                    
+                </div>
+             
+
+                <div id="hover2">
+
+                    <i class="fa-solid fa-angle-right" id="angle2"></i>
+
+                    <p id="text8">Contact</p>
+                    
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div id="copy-rights">
+            <div id="copy-rights-div">
+                <div id="text9">Theme: Illdy.</div>
+                <div id="text10"> © Copyright 2017. All Rights Reserved.</div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
